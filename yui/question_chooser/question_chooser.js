@@ -48,7 +48,7 @@ YUI.add('moodle-qtype_wq-question_chooser', function(Y) {
                 // Convert qtype option into section title and move to the bottom.
                 var wq = label.ancestor('div');
                 var name = wq.one('span.typename').remove(false);
-                var summary = wq.one('span.typesummary').remove(false);
+                var summary = wq.one('.typesummary').remove(false);
                 wq.one('label').remove(true);
                 wq.append(name).append(summary).addClass('moduletypetitle');
                 var container = wq.ancestor();
